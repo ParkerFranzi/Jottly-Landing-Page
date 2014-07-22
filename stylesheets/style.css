@@ -3,7 +3,7 @@ body {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
-div#header {
+#header {
   background-color: #1D5228;
 }
 
@@ -55,11 +55,20 @@ a, a:visited {
   font-family: 'Oswald', Helvetica, Arial, sans-serif;
 }
 
-div#logo {
+#logo {
   display: inline;
 }
 
-div#main-feature {
+@media only screen and (max-width: 479px) {
+
+  #logo{
+    display: block;
+    text-align: center;
+    margin: 20px auto 0;
+  }
+}
+
+#main-feature {
   background-color: #6CBE4C;
   background-image: url('../images/main-background.png');
   background-size: cover;
@@ -68,33 +77,44 @@ div#main-feature {
   min-height: 500px;
 }
 
-div#marketing {
+#marketing {
     text-align: center;
     margin-top: 50px;
 }
-div#marketing h1 {
+#marketing h1 {
     font-weight: 700;
     color:#fff;
     margin:0;
     letter-spacing: -0.05em;
     line-height: .9;
 }
-div#marketing p {
+@media only screen and (max-width: 479px) {
+
+  #marketing h1{ font-size: 25px; }
+
+}
+
+#marketing p {
     color:#fff;
     font-size: 20px;
     margin-top: 20px;
 }
 
-div#screenwrap {
+#screenwrap {
     text-align: center;
 }
 
-div#first-cta {
+#screenwrap img{
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+#first-cta {
   text-align: center;
 }
 
 
-div#first-cta form input {
+#first-cta form input {
   display:  inline;
   width: 400px;
   border-radius: 4px;
@@ -102,7 +122,7 @@ div#first-cta form input {
   padding: 12px;
 }
 
-div#first-cta form button {
+#first-cta form button {
   background: #F3DC1E;
   color: #000;
   border: none;
@@ -111,35 +131,43 @@ div#first-cta form button {
   padding: 8px 15px 11px;
 }
 
-div#screenwrap {
+#screenwrap {
   margin-bottom: -6px;
   text-align: center;
 }
 
-div#feature-block {
+#feature-block {
   text-align: center;
   color: #000;
   font-weight: 700;
 }
 
-div#feature-text h1{
+#feature-text h1{
     letter-spacing: -0.05em;
 }
 
-div#feature-text {
+@media only screen and (max-width: 479px) {
+
+  #feature-text h1{ font-size: 25px; }
+
+}
+
+#feature-text {
   margin-top: 30px;
 }
 
-div#app-block {
+#app-block {
   background: #6CBE4C;
   text-align: center;
 }
 
-div#app-pic {
+#app-pic {
   margin-bottom: 5px;
 }
 
-div#testimonials h3 {
+#app-pic img{ width: 100%; margin-bottom: -5px; }
+
+#testimonials h3 {
   font-size: 20px;
   color: #1D5228;
   font-style: bold;
@@ -147,7 +175,7 @@ div#testimonials h3 {
   font-weight: 700;
 }
 
-div#testimonials p {
+#testimonials p {
   font-style: italic;
   font-size: 14px;
   color: #1D5228;
@@ -155,41 +183,49 @@ div#testimonials p {
   margin-top: -6px;
 }
 
-div#test-head {
+#test-head {
   letter-spacing: -0.05em;
   text-align: center;
   font-weight: 700;
   margin-top: 10px;
 }
 
-div#client-pic-one {
+@media only screen and (max-width: 479px) {
+  #test-head h1 { font-size: 25px; }
+}
+
+#client-pic-one {
   text-align: center;
 }
 
-div#client-pic-two {
+#client-pic-two {
   text-align: center;
 }
 
-div#client-pic-three {
+#client-pic-three {
   text-align: center;
 }
 
-div#second-cta {
+#second-cta {
   text-align: center;
   background: #6CBE4C;
 }
 
-div#second-cta h1 {
+#second-cta h1 {
   letter-spacing: -0.05em;
   padding-top: 15px;
 }
 
-div#second-cta p {
+@media only screen and (max-width: 479px) {
+  #second-cta h1{ font-size: 25px; }
+}
+
+#second-cta p {
   color: #000;
   font-size: 16px;
 }
 
-div#second-cta form input {
+#second-cta form input {
   display: inline;
   width: 400px;
   border-radius: 4px;
@@ -197,7 +233,7 @@ div#second-cta form input {
   padding: 12px;
 }
 
-div#second-cta form button {
+#second-cta form button {
   background: #F3DC1E;
   color: #000;
   border: none;
@@ -206,30 +242,37 @@ div#second-cta form button {
   padding: 8px 15px 11px;
 }
 
-div#footer {
+footer {
   background: #1D5228;
   margin-top: -20px;
 }
 
-div#footer nav {
+footer nav {
   margin:15px 0 0;
 }
 
-div#footer p {
+footer p {
   color: #3CBB9B;
   display: inline;
   font-family: 'Oswald', Helvetica, Arial, sans-serif;
 }
 
-div#footer nav ul {
+footer nav ul {
   list-style-type: none;
 }
 
-div#footer nav ul li {
+footer nav ul li {
   display:inline;
 }
 
-div#footer nav ul li a {
+@media only screen and (max-width: 479px) {
+  footer nav {
+    text-align: center;
+
+  }
+}
+
+footer nav ul li a {
   color:#3CBB9B;
   text-decoration: none;
   margin: 15px;
@@ -238,4 +281,11 @@ div#footer nav ul li a {
 .right {
   margin: 15px 0 0;
   text-align: right;
+}
+
+@media only screen and (max-width: 479px) {
+  .right {
+    text-align: center;
+
+  }
 }
